@@ -15,7 +15,9 @@
           theme: {
             extend: {
               colors: {
-                clifford: '#da373d',
+                yellow: '#FECC02',
+                offBlack: '#131313',
+                gray: '#4E4E4E',
               },
               fontFamily : {
                 bebas: ["Bebas Neue", "cursive"],
@@ -26,16 +28,17 @@
 
               },
               backgroundImage: {
-        'hero-pattern': "url('/img/hero-pattern.svg')",
+        banar: "url('./images/banner.jpg')",
+
         'footer-texture': "url('/img/footer-texture.png')",
-      },
+      }
             }
           }
         }
       </script>
 </head>
 <body>
-    <nav class="flex justify-between items-center px-7 md:px-24 lg:px-52 h-20 bg-white  font-bebas gap-5">
+    <nav class="flex justify-between items-center px-4 fixed w-full md:px-24 lg:px-52 h-20 bg-white  font-bebas gap-5">
       <h1 class="text-3xl">e-Commerce </h1>
       <ul class="flex gap-3 text-lg">
         <li>About us</li>
@@ -43,12 +46,12 @@
         <li>Services</li>
       </ul>
     </nav>
-    <section>
-      <div class="ml-20 font-bebas">
+    <section class="bg-banar bg-cover h-screen flex items-center">
+      <div class="ml-20 font-bebas w-96">
        <p class="uppercase ">Movei Production stdio</p>
-       <h1>Films Made to Perfection</h1>
+       <h1>Films Made to <br><span class="text-yellow">Perfection</span></h1>
        <p class="font-montserrat">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic, minima? Quasi accusamus recusandae, soluta minus sit officiis vitae molestias facere.</p>
-       <button>Discover More</button>
+       <button class="text-white border-2 hover:bg-yellow hover:text-black hover:border-yellow"> Discover More</button>
       </div>
     </section>
 
