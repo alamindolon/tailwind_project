@@ -8,26 +8,38 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
     <script>
         tailwind.config = {
           theme: {
             extend: {
               colors: {
                 clifford: '#da373d',
-              }
-              fontFamily: {
+              },
+              fontFamily : {
+                bebas: ["Bebas Neue", "cursive"],
+                montserrat: ["Montserrat", "sans-serif"],
 
-              }
+//                 font-family: 'Bebas Neue', cursive;
+// font-family: 'Montserrat', sans-serif;
+
+              },
             }
           }
         }
       </script>
 </head>
 <body>
-    <p>
+    <nav class="flex justify-between items-center px-7 md:px-24 lg:px-52 h-20 bg-white  font-bebas gap-5">
+      <h1 class="text-3xl">e-Commerce </h1>
+      <ul class="flex gap-3 text-lg">
+        <li>About us</li>
+        <li>our Moveis</li>
+        <li>Services</li>
+      </ul>
+    </nav>
+    
 
-    </p>
 </body>
-</html>
+</html> 
